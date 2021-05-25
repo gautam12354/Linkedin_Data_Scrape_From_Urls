@@ -9,14 +9,14 @@ driver.maximize_window()
 login_url = 'https://www.linkedin.com/login'
 driver.get(login_url)
 email_xpath = """//*[@id="username"]"""
-email_id = 'vivektalwar13071999@gmail.com'
+email_id = 'Your Email'
 find_email_element = driver.find_element_by_xpath(email_xpath)
 find_email_element.send_keys(email_id)
 
 time.sleep(3)
 
 password_xpath = """//*[@id="password"]"""
-password = 'startdnd1909'
+password = 'Your Password'
 find_pass_element = driver.find_element_by_xpath(password_xpath)
 find_pass_element.send_keys(password)
 find_pass_element.send_keys(Keys.ENTER)
