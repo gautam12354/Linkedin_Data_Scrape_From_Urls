@@ -60,7 +60,7 @@ for link in urls_list:
         title_list.append(erroe)
 
     try:
-        company = html_soup.find('h2', {'class': 'text-heading-small align-self-center flex-1'})
+        company = html_soup.find('h2', {'class': 'text-heading-small align-self-center flex-1 break-words'})
         company_text = company.get_text().strip()
         text_3 = company_text
         company_list.append(text_3)
